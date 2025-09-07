@@ -1,12 +1,9 @@
 import { useEffect, useRef } from "react";
 
 export const RevealOnScroll = ({ children }) => {
-    const ref = useRef(null); // Initialize ref with null
-
+    const ref = useRef(null);
     useEffect(() => {
         const element = ref.current;
-
-        // 1. The observer is created
         const observer = new IntersectionObserver(
             ([entry]) => { 
                 if (entry.isIntersecting) {
@@ -22,14 +19,12 @@ export const RevealOnScroll = ({ children }) => {
         if (element) {
             observer.observe(element);
         }
-
         return () => {
             if (element) {
                 observer.unobserve(element);
             }
         };
     }, []);
-
     return (
         <div ref={ref} className="opacity-0 transition-opacity duration-1000 ease-in-out">
             {children}
