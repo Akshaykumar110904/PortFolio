@@ -8,6 +8,17 @@ html, body {
   color: white;
 }
 @layer utilities {
+  @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(250%);
+    }
+  }
+  .animate-loading-bar {
+    animation: loading 2s linear infinite;
+  }
   @keyframes blink {
     0%,100% {
       opacity: 1;
@@ -18,5 +29,12 @@ html, body {
   }
   .animate-blink {
     animation: blink 0.5s step-end infinite;
+  }
+}
+@layer components{
+  photo{
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(to r,rgb(0, 132, 255),rgb(0, 55, 255),rgba(232, 63, 226, 0.856));
   }
 }

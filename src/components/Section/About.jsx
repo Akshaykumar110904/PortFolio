@@ -3,7 +3,7 @@ import { RevealOnScroll } from "../RevealOnScroll";
 export const About = () => {
     return (
         <section id="about" className="min-h-screen flex flex-col justify-center items-center py-20 relative overflow-hidden">
-            <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10rem] md:text-[15rem] font-bold text-gray-200/10 z-0 select-none">
+            <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10rem] md:text-[15rem] font-bold text-gray-300/20 z-0 select-none">
                 About Me
             </h1>
             <div className="relative z-10 w-full max-w-4xl mx-auto px-4">

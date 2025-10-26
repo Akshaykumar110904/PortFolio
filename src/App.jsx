@@ -5,6 +5,8 @@ import { MobileMenu } from "./components/MobileMenu"
 import {Home} from './components/Section/Home'
 import {About} from "./components/Section/About"
 import { Skills } from './components/Section/Skills';
+import { Contact } from './components/Section/Contact';
+import Project from "./components/Section/Project"
 function App() {
   const [isLoaded, setIsLoaded] = React.useState(false);
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -17,6 +19,8 @@ function App() {
       <Home/>
       <About/>
       <Skills/>
+      <Project/>
+      <Contact/>
       </div>
     </>
   )

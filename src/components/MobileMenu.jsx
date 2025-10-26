@@ -9,11 +9,11 @@ export const MobileMenu = ({menuOpen,setMenuOpen}) => {
             <button onClick={() => setMenuOpen(false)} className="absolute top-6 right-6 text-3xl text-gray-100 focus:outline-none hover:text-green-500 transition-colors duration-300" aria-label="Close Menu">
                 &times;
             </button>
-            <a href="#home" onClick={()=>{setMenuOpen(false)}} className={`text-2xl font-semibold hover:text-green-500 transition-colors duration-300 &{menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>Home</a>
-            <a href="#about" onClick={()=>{setMenuOpen(false)}} className={`text-2xl font-semibold hover:text-green-500 transition-colors duration-300 &{menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>About</a>
-            <a href="#skills" onClick={()=>{setMenuOpen(false)}} className={`text-2xl font-semibold hover:text-green-500 transition-colors duration-300 &{menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>Skills</a>
-            <a href="#projects" onClick={()=>{setMenuOpen(false)}} className={`text-2xl font-semibold hover:text-green-500 transition-colors duration-300 &{menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>Projects</a>
-            <a href="#contact" onClick={()=>{setMenuOpen(false)}} className={`text-2xl font-semibold hover:text-green-500 transition-colors duration-300 &{menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>Contact</a>
+            <a href="#home" onClick={()=>{setMenuOpen(false)}} className={`italic m-1 p-1 text-2xl font-semibold border border-black shadow-[0_1px_15px_rgba(59,246,130,0.5)] bg-green-500/5 text-green-500 transition-colors duration-300 &{menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>Home</a>
+            <a href="#about" onClick={()=>{setMenuOpen(false)}} className={`italic m-1 p-1 text-2xl font-semibold border border-black shadow-[0_1px_15px_rgba(59,246,130,0.5)] bg-green-500/5 text-green-500 transition-colors duration-300 &{menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>About</a>
+            <a href="#skills" onClick={()=>{setMenuOpen(false)}} className={`italic m-1 p-1 text-2xl font-semibold border border-black shadow-[0_1px_15px_rgba(59,246,130,0.5)] bg-green-500/5 text-green-500 transition-colors duration-300 &{menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>Skills</a>
+            <a href="#projects" onClick={()=>{setMenuOpen(false)}} className={`italic m-1 p-1 text-2xl font-semibold border border-black shadow-[0_1px_15px_rgba(59,246,130,0.5)] bg-green-500/5 text-green-500 transition-colors duration-300 &{menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>Projects</a>
+            <a href="#contact" onClick={()=>{setMenuOpen(false)}} className={`italic m-1 p-1 text-2xl font-semibold border border-black shadow-[0_1px_15px_rgba(59,246,130,0.5)] bg-green-500/5 text-green-500 transition-colors duration-300 &{menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>Contact</a>
         </div>
     )
 }
